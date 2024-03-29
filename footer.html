@@ -1,0 +1,149 @@
+
+<div class="footer">
+  <div class="column-a">
+    <div class="column-a-title">EDITEUR</div>
+      <a href="/editeur" class="footer-link">Cliquez ici pour accéder à l'éditeur</a>
+  </div>
+  <div class="column-b">
+    <div class="column-b-title">HÉBERGEUR</div>
+    <p>Ce site est hébergé par la société Microsoft(France).</p>
+    <p>Adresse : 37 Quai du Président Roosevelt, 92130 Issy-les-Moulineaux</p>
+    <p>Numéro de téléphone: 09 70 01 90 90</p>
+  </div>
+  <div class="column-c">
+    <div class="column-c-title">Conditions générales d'utilisation</div>
+    <a href="/CGU" class="footer-link">Cliquer ici pour lire les CGU</a>
+  </div>
+  <div class="column-d">
+    <div class="logo-onepoint"><img src="/onepointLogo.png"></div>
+    <div class="logo-laPsydé"><img src="/lapsyde-new-logo.png" /></div>
+  </div>
+</div>
+
+
+
+<style>
+  .footer {
+    height: 300px;
+    border-top: 1px solid #5058A8;
+    display: flex;
+    padding-top: 46px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .column-a {
+    max-width: 704px;
+  }
+
+  .column-b {
+    max-width: 293px;
+  }
+
+  .column-c {
+    max-width: 268px;
+  }
+
+  .column-d {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+  }
+
+  .column-b-title, .column-c-title, .column-a-title {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  p {
+    color:#fff;
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  .footer-link {
+    color: #fff;
+    text-decoration: underline !important;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+ </style>
+
+
+
+
+
+
+<script>
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+      const currentUrl = window.location.href;
+  
+      const englishFooterUrls = [
+      "https://cogitum.powerappsportals.com/homePage/",
+      "https://cogitum.powerappsportals.com/batQuestionsEn/",
+      "https://cogitum.powerappsportals.com/batResultsEn/",
+      "https://cogitum.powerappsportals.com/batRetestResults/",
+      "https://cogitum.powerappsportals.com/neglectQuestionsEn/",
+      "https://cogitum.powerappsportals.com/neglectResultsEn/",
+      "https://cogitum.powerappsportals.com/neglectRetestQuestions/",
+      "https://cogitum.powerappsportals.com/neglectRetestResults/",
+      "https://cogitum.powerappsportals.com/conjunctionQuestionsEn/",
+      "https://cogitum.powerappsportals.com/conjunctionResultsEn/",
+      "https://cogitum.powerappsportals.com/conjunctionRetestResults/",
+      "https://cogitum.powerappsportals.com/instructionsEn/?game=conjonctionEn",
+      "https://cogitum.powerappsportals.com/instructionsEn/?game=negligenceEn",
+      "https://cogitum.powerappsportals.com/instructionsEn/?game=batEn",
+      "https://cogitum.powerappsportals.com/aboutEn/",
+      "https://cogitum.powerappsportals.com/CGUen/",
+      "https://cogitum.powerappsportals.com/publisher/"
+      
+    ];
+  
+      function updateFooterContent() {
+          if (englishFooterUrls.includes(currentUrl)) {
+              const headerElement = document.querySelector('.footer'); 
+              if(headerElement) {
+                  headerElement.innerHTML = `
+                  <div class="column-a">
+      <div class="column-a-title">PUBLISHER</div>
+        <a href="/publisher" class="footer-link">Click here to access the publisher.</a>
+    </div>
+    <div class="column-b">
+      <div class="column-b-title">HOST</div>
+      <p>This site is hosted by Microsoft Corporation(France).</p>
+      <p>Adress: 37 Quai du Président Roosevelt, 92130 Issy-les-Moulineaux</p>
+      <p>Telephone number: 09 70 01 90 90</p>
+    </div>
+    <div class="column-c">
+      <div class="column-c-title">TERMS AND CONDITIONS OF USE</div>
+      <a href="/CGUen" class="footer-link">Click here to read the terms and conditions of use</a>
+    </div>
+    <div class="column-d">
+      <div class="logo-onepoint"><img src="/onepointLogo.png"></div>
+      <div class="logo-laPsydé"><img src="/lapsyde-new-logo.png" /></div>
+    </div>
+                  `;
+              }
+          }
+      }
+  
+      updateFooterContent();
+  });
+  
+   </script>

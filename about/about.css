@@ -1,0 +1,91 @@
+*{
+    background: #181D4B;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    background: #181D4B;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin-top: 45px;
+}
+
+.logo-title-paragraph-box {
+    display: flex;
+    color: #FFF;
+}
+
+.logo-woman-box{
+    width: 40%;
+}
+
+.logo-woman {
+    width: 282px;
+    height: 228px;
+}
+
+.title-paragraph-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: Manrope;
+    font-weight: Bold;
+    font-size: 48px;
+}
+
+.paragraph-box {
+    font-family: Inter;
+    font-weight: regular;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.submit-button-box {
+  display: flex;
+  justify-content: flex-end;
+  background: #181D4B;
+  margin-top: 10px;
+}
+
+.submit-button {
+  border-radius: 117px;
+  background: #CCDBFD;
+  padding: 10px 30px;
+  border: unset;
+}
+
+
+
+.button-text {
+  color: #181D4B;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: #CCDBFD;
+}
+
+
+
+
+
+@media (max-width: 1190px) {
+    .logo-title-paragraph-box {
+        margin: 0 10px;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .logo-woman {
+        width: 175px;
+        height: 155px;
+    }
+}

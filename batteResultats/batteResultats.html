@@ -1,0 +1,247 @@
+<div class="main">
+  <div class="main-box">
+    <div class="img-box"><img src="/woman-congratulate.png" alt="icone gens célébrant" class="people-icon" /></div>
+    <div class="question-box">
+      <div class="ball-title">
+        <div class="ball-img-box"><img src="/golden-ball.png" alt="icone balle de volley" class="ball-icon" /></div>
+        <h2 class="title-question">Fin de la session !</h2>
+      </div>
+      <div class="score_container">
+        <div class="score_container-A">
+          <div class="score-title">Score <span class="avant-apres">avant</span> la vidéo</div>
+          <div class="box-result-bef"><div id="resultBef"></div></div>
+        </div>
+        <img src="/new-lightning.png" alt="éclair" class="orange_lightning" />
+        <div class="score_container-B">
+          <div class="score-title">Score <span class="avant-apres">après</span> la vidéo</div>
+          <div class="box-result-bef"><div id="resultAft"></div></div>
+        </div>
+      </div>
+      <div id="result" class="result">Votres score: 5 / 8</div>
+      <div id="feedback" class="result"></div>
+      <div class="sharing_container">
+        <div class="share-exp">Partagez cette expérience, ça nous aide beaucoup !</div>
+        <div class="social_links-box">
+          <a target="_blank" href="https://www.facebook.com/share.php?u=https://testcogi.powerappsportals.com/" class="social-links" style="text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><img src="/facebook-logo.png" alt="facebook-logo" name="facebook-logo.png" class="social-icon" /></a><a href=" https://wa.me/?text=https://testcogi.powerappsportals.com/" data-action="share/whatsapp/share" target="_blank" class="social-links" style="text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><img src="/whatsapp-logo.png" alt="whatsapp-logo" name="whatsapp-logo.png" class="social-icon" /></a><a href="https://www.gmail.com/" target="_blank" class="social-links" style="text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><img src="/gmail-logo.png" alt="gmail-logo" name="gmail-logo.png" class="social-icon" /></a><a id="share" href="https://linkedin.com/shareArticle?url=https://testcogi.powerappsportals.com/" target="_blank" class="social-links" style="text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><img src="/linkedin-logo.png" alt="linkedin-logo" name="linkedin-logo.png" class="social-icon" /></a><a href="https://twitter.com/share?&amp;url=https://testcogi.powerappsportals.com/" target="_blank" class="social-links" style="text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><img src="/X-logo.png" alt="X-logo" name="X-logo.png" class="social-icon" /></a>
+        </div>
+      </div>
+      <div class="buttons_container">
+        <a href="/" id="home_button" class="home_button" style="text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><img src="/new-home.png" alt="home-icone" name="home-icone.png" class="button-icon" /><span class="button-span">Accueil</span></a
+        ><a href="/batteQuestions" id="replay_button" class="replay_button" style="text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><img src="/rejouer-icon.png" alt="replay icone" name="replay-icone.png" class="button-icon" /><span class="button-span">Rejouer</span></a
+        ><a href="/keepPlaying" id="keepPlaying_button" class="keepPlaying_button" style="display: none; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><img src="/running-man.png" alt="guy running icone" name="guy-running.png" class="button-icon" /><span class="button-span">Continuer à jouer</span></a>
+        <a href="" id="form_button" class="form_button" style="text-decoration-line: none; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><img src="/check.png" alt="check-icone" name="home-icone.png" class="form-button-icon" /><span class="form-button-span">Répondre à notre sondage</span></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div id="consentModal" style="display:none;" class="modal-consent">
+  <div class="modal-consent-content">
+   <div class="close-icon-container" id="closeIcon">
+      <img src="/icone-croix.png" alt="Close" />
+    </div>
+    <div class="main-modal">
+  <div class="ball-title-modal">
+    <div class="img-box-modal"><img src="/light-bulb.png" alt="ampoule allumée" class="light-bulb-icon" /></div>
+    <h2 class="title-modal">Nous espérons que ce jeu vous a plu ! <br />Prenez 1 minute pour répondre à ces questions, ça nous aiderait beaucoup.</h2>
+  </div>
+   <p class="sub-title">Ces données sont anonymisées et nous permettrons de compléter nos recherches.</p>
+  <div class="form-box">
+    <form id="userInfoForm" class="userInfoForm">
+      <div class="age-genre">
+        <div class="form-group"><input type="text" id="age" name="age" placeholder="Votre âge" class="bkgd-inputs" /></div>
+        <div class="form-group">
+          <select id="gender" name="gender" class="bkgd-inputs">
+            <option value="" class="bkgd-inputs">Votre genre</option>
+            <option value="Homme" class="bkgd-inputs">Homme</option>
+            <option value="Femme" class="bkgd-inputs">Femme</option>
+            <option value="Autre" class="bkgd-inputs">Autre</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <select id="education" name="education" class="bkgd-inputs">
+          <option value="" class="bkgd-inputs">Votre plus haut niveau d'étude</option>
+          <option value="aucune" class="bkgd-inputs">Aucune éducation</option>
+          <option value="Lycée" class="bkgd-inputs">Lycée</option>
+          <option value="Licence" class="bkgd-inputs">Licence</option>
+          <option value="master" class="bkgd-inputs">Master</option>
+          <option value="Doctorat" class="bkgd-inputs">Doctorat</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select id="country" name="country" class="bkgd-inputs">
+          <option value="" class="bkgd-inputs">Votre pays actuel de résidence</option>
+          <option value="Afghanistan" class="bkgd-inputs">Afghanistan</option>
+          <option value="Afrique du Sud" class="bkgd-inputs">Afrique du Sud</option>
+          <option value="Allemagne" class="bkgd-inputs">Allemagne</option>
+          <option value="Algérie" class="bkgd-inputs">Algérie</option>
+          <option value="Angola" class="bkgd-inputs">Angola</option>
+          <option value="Arabie Saoudite" class="bkgd-inputs">Arabie Saoudite</option>
+          <option value="Argentine" class="bkgd-inputs">Argentine</option>
+          <option value="Australie" class="bkgd-inputs">Australie</option>
+          <option value="Autriche" class="bkgd-inputs">Autriche</option>
+          <option value="Bangladesh" class="bkgd-inputs">Bangladesh</option>
+          <option value="Belgique" class="bkgd-inputs">Belgique</option>
+          <option value="Birmanie" class="bkgd-inputs">Birmanie</option>
+          <option value="Brésil" class="bkgd-inputs">Brésil</option>
+          <option value="Bulgarie" class="bkgd-inputs">Bulgarie</option>
+          <option value="Canada" class="bkgd-inputs">Canada</option>
+          <option value="Chili" class="bkgd-inputs">Chili</option>
+          <option value="Chine" class="bkgd-inputs">Chine</option>
+          <option value="Colombie" class="bkgd-inputs">Colombie</option>
+          <option value="Congo" class="bkgd-inputs">Congo</option>
+          <option value="Corée du Sud" class="bkgd-inputs">Corée du Sud</option>
+          <option value="Croatie" class="bkgd-inputs">Croatie</option>
+          <option value="Danemark" class="bkgd-inputs">Danemark</option>
+          <option value="Égypte" class="bkgd-inputs">Égypte</option>
+          <option value="Espagne" class="bkgd-inputs">Espagne</option>
+          <option value="Estonie" class="bkgd-inputs">Estonie</option>
+          <option value="États-Unis" class="bkgd-inputs">États-Unis</option>
+          <option value="Éthiopie" class="bkgd-inputs">Éthiopie</option>
+          <option value="Finlande" class="bkgd-inputs">Finlande</option>
+          <option value="France" class="bkgd-inputs">France</option>
+          <option value="Ghana" class="bkgd-inputs">Ghana</option>
+          <option value="Grèce" class="bkgd-inputs">Grèce</option>
+          <option value="Hongrie" class="bkgd-inputs">Hongrie</option>
+          <option value="Inde" class="bkgd-inputs">Inde</option>
+          <option value="Indonésie" class="bkgd-inputs">Indonésie</option>
+          <option value="Irak" class="bkgd-inputs">Irak</option>
+          <option value="Iran" class="bkgd-inputs">Iran</option>
+          <option value="Irlande" class="bkgd-inputs">Irlande</option>
+          <option value="Islande" class="bkgd-inputs">Islande</option>
+          <option value="Italie" class="bkgd-inputs">Italie</option>
+          <option value="Japon" class="bkgd-inputs">Japon</option>
+          <option value="Kazakhstan" class="bkgd-inputs">Kazakhstan</option>
+          <option value="Kenya" class="bkgd-inputs">Kenya</option>
+          <option value="Lettonie" class="bkgd-inputs">Lettonie</option>
+          <option value="Lituanie" class="bkgd-inputs">Lituanie</option>
+          <option value="Luxembourg" class="bkgd-inputs">Luxembourg</option>
+          <option value="Malaisie" class="bkgd-inputs">Malaisie</option>
+          <option value="Maroc" class="bkgd-inputs">Maroc</option>
+          <option value="Mexique" class="bkgd-inputs">Mexique</option>
+          <option value="Nigéria" class="bkgd-inputs">Nigéria</option>
+          <option value="Norvège" class="bkgd-inputs">Norvège</option>
+          <option value="Nouvelle-Zélande" class="bkgd-inputs">Nouvelle-Zélande</option>
+          <option value="Pays-Bas" class="bkgd-inputs">Pays-Bas</option>
+          <option value="Pérou" class="bkgd-inputs">Pérou</option>
+          <option value="Philippines" class="bkgd-inputs">Philippines</option>
+          <option value="Pologne" class="bkgd-inputs">Pologne</option>
+          <option value="Portugal" class="bkgd-inputs">Portugal</option>
+          <option value="Qatar" class="bkgd-inputs">Qatar</option>
+          <option value="République Tchèque" class="bkgd-inputs">République Tchèque</option>
+          <option value="Roumanie" class="bkgd-inputs">Roumanie</option>
+          <option value="Royaume-Uni" class="bkgd-inputs">Royaume-Uni</option>
+          <option value="Russie" class="bkgd-inputs">Russie</option>
+          <option value="Sénégal" class="bkgd-inputs">Sénégal</option>
+          <option value="Serbie" class="bkgd-inputs">Serbie</option>
+          <option value="Singapour" class="bkgd-inputs">Singapour</option>
+          <option value="Slovaquie" class="bkgd-inputs">Slovaquie</option>
+          <option value="Slovénie" class="bkgd-inputs">Slovénie</option>
+          <option value="Somalie" class="bkgd-inputs">Somalie</option>
+          <option value="Soudan" class="bkgd-inputs">Soudan</option>
+          <option value="Suède" class="bkgd-inputs">Suède</option>
+          <option value="Suisse" class="bkgd-inputs">Suisse</option>
+          <option value="Syrie" class="bkgd-inputs">Syrie</option>
+          <option value="Taïwan" class="bkgd-inputs">Taïwan</option>
+          <option value="Tanzanie" class="bkgd-inputs">Tanzanie</option>
+          <option value="Thaïlande" class="bkgd-inputs">Thaïlande</option>
+          <option value="Tunisie" class="bkgd-inputs">Tunisie</option>
+          <option value="Turquie" class="bkgd-inputs">Turquie</option>
+          <option value="Ukraine" class="bkgd-inputs">Ukraine</option>
+          <option value="Viêt Nam" class="bkgd-inputs">Viêt Nam</option>
+          <option value="Venezuela" class="bkgd-inputs">Venezuela</option>
+          <option value="Zimbabwe" class="bkgd-inputs">Zimbabwe</option>
+
+
+        </select>
+      </div>
+      <div class="blank-space-modal"></div>
+      <div class="submit-button-box-modal">
+    <button type="submit" class="submit-button-modal" id="submit-button-modal" ><span class="button-text-modal">Accepter</span></button>
+  </div>
+    </form>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+<!--
+
+<div class="main-box">
+<div class="main">
+  <div class="ball-title">
+    <div class="img-box"><img src="/light-bulb.png" alt="ampoule allumée" class="light-bulb-icon" /></div>
+    <h2 class="title">Nous espérons que ce jeu vous a plu ! <br />Prenez 1 minute pour répondre à ces questions, ça nous aiderait beaucoup.</h2>
+  </div>
+  <p class="sub-title">Ces données nous permettrons de poursuivre nos recherches en alimentant notre étude.</p>
+  <div class="form-box">
+    <form id="userInfoForm" class="userInfoForm">
+      <div class="age-genre">
+        <div class="form-group"><input type="text" id="age" name="age" placeholder="Votre âge" class="bkgd-inputs" /></div>
+        <div class="form-group">
+          <select id="gender" name="gender" class="bkgd-inputs">
+            <option value="" class="bkgd-inputs">Votre genre</option>
+            <option value="male" class="bkgd-inputs">Homme</option>
+            <option value="female" class="bkgd-inputs">Femme</option>
+            <option value="other" class="bkgd-inputs">Autre</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <select id="education" name="education" class="bkgd-inputs">
+          <option value="" class="bkgd-inputs">Votre plus haut niveau d'étude</option>
+          <option value="none" class="bkgd-inputs">Aucune éducation</option>
+          <option value="highschool" class="bkgd-inputs">Lycée</option>
+          <option value="bachelor" class="bkgd-inputs">Licence</option>
+          <option value="master" class="bkgd-inputs">Master</option>
+          <option value="doctorate" class="bkgd-inputs">Doctorat</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select id="country" name="country" class="bkgd-inputs">
+          <option value="" class="bkgd-inputs">Votre pays actuel de résidence</option>
+          <option value="france" class="bkgd-inputs">France</option>
+          <option value="spain" class="bkgd-inputs">Espagne</option>
+          <option value="italy" class="bkgd-inputs">Italie</option>
+          <option value="germany" class="bkgd-inputs">Allemagne</option>
+        </select>
+      </div>
+    </form>
+  </div>
+  <div class="submit-button-box">
+    <button type="submit" id="userInfoForm-2" class="submit-button"><span class="button-text">Envoyer</span></button>
+  </div>
+</div>
+</div>
+
+-->
+
+
+
+
+
+
+<div id="inllzf" class="row sectionBlockLayout text-left" style="display: none; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px; display: none;">
+  <div class="container" id="icy3q6" style="padding: 0px; display: flex; flex-wrap: wrap;"><div class="col-md-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px; word-break: break-word;"></div></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="im5ts1" class="row sectionBlockLayout text-left" style="display: none; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
+  <div class="container" id="if7kp4" style="padding: 0px; display: flex; flex-wrap: wrap;"><div class="col-md-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px; word-break: break-word;"></div></div>
+</div>

@@ -1,0 +1,33 @@
+*{
+    background: #181D4B;
+    color: #fff;
+}
+
+.main {
+    background: #181D4B;
+    margin: 0 40px 40px 40px;
+}
+
+.blank-space {
+    background: #181d48;
+    height: 10px;
+  }
+
+.main-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 55px;
+    font-family: Manrope;
+}
+
+h2, h3 {
+    font-family: Manrope;
+}
+
+p {
+    text-align: justify;
+    font-family: Inter;
+}

@@ -1,0 +1,44 @@
+*{
+    background: #181D4B;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    background: #181D4B;
+    margin: 0 40px 40px 40px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blank-space {
+    background: #181d48;
+    height: 10px;
+  }
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 55px;
+    font-family: Manrope;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    font-family: Manrope;
+}
+
+p {
+    text-align: justify;
+    font-family: Inter;
+}

@@ -1,0 +1,53 @@
+*{
+    background: #181D4B;
+}
+
+.button1:hover {
+  background: #FFD19A !important;
+}
+
+@media (max-width: 990px) {
+    #im3uxu {
+      gap: unset !important;
+  }
+  #i8c4fl, #izsibj {
+      margin-bottom: 15px;
+  }
+}
+
+.mail-box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .mail-input-box{
+    position: relative;
+  }
+  .mail-input {
+    width: 100%;
+    padding: 10px 48px 10px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 42px; 
+    box-sizing: border-box; 
+    height: 29px;
+  }
+  .submit-button-mail {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 29px;
+    border: 1px solid #fff;
+    color: white;
+    padding: 0 15px;
+    border-radius: 42px; 
+    cursor: pointer;
+  }
+  .mail-sentence {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 19px;
+  }
